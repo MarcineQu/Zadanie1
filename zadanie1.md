@@ -13,8 +13,9 @@ W konsoli podczas włączenia kontenera pokazuję się komunikat:
 ![image](https://github.com/MarcineQu/Zadanie1/assets/83167368/c5fd24dc-6aa5-4d31-be93-d0bdd8f20246)
 
 Sprawdzenie ile obraz ma warstw:
-docker history zadanie1
-![image](https://github.com/MarcineQu/Zadanie1/assets/83167368/af0f40d7-e804-4bc3-8ff0-5871a0a02875)
+docker history e90f7ffaacfb  // to u mnie było id mojego obrazu
+![image](https://github.com/MarcineQu/Zadanie1/assets/83167368/f195ab54-4fa6-48e7-a7c3-2e4e87e87e9d)
+
 
 Screen z przeglądarki:
 
