@@ -1,5 +1,3 @@
-# syntax=docker/dockerfile:experimental
-
 # Etap budowania aplikacji
 FROM --platform=$BUILDPLATFORM node:20 AS builder
 WORKDIR /app
