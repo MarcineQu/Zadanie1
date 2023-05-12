@@ -10,3 +10,6 @@ Polecenie budowania: docker buildx build -t docker.io/marcinequ/lab:zadanie1 --p
 
 **Uruchomienie obrazu z repo dockerhub:**
 ![image](https://github.com/MarcineQu/Zadanie1/assets/83167368/ccd4a480-e985-4444-8263-fc3d1ba5b757)
+
+Healthcheck:
+![image](https://github.com/MarcineQu/Zadanie1/assets/83167368/b069669d-ab23-493c-8973-09df641240b3)
