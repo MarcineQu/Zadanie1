@@ -1,17 +1,21 @@
+# syntax=docker/dockerfile:experimental
+
 # Etap budowania aplikacji
-FROM node:20 AS builder
+FROM --platform=$BUILDPLATFORM node:20 AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN --mount=type=cache,target=/root/.npm \
+    npm install
 COPY . .
 
 # Etap końcowy - tworzymy lekki obraz oparty na node:alpine i kopiujemy tylko potrzebne pliki
-FROM node:20-alpine3.16
+FROM --platform=$TARGETPLATFORM node:20-alpine3.16
 LABEL author="Marcin Garbacz"
 WORKDIR /app
 COPY package*.json index.js ./
 
-RUN npm install --production
+RUN --mount=type=cache,target=/root/.npm \
+    npm install --production
 
 CMD [ "npm", "start" ]
 
