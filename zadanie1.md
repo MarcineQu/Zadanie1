@@ -2,7 +2,7 @@
 **Plik  index.js:**
 ![image](https://github.com/MarcineQu/Zadanie1/assets/83167368/8fa4cac5-cdfc-4745-8618-4220c9527398)
 **Plik Dockerfile:**
-![image](https://github.com/MarcineQu/Zadanie1/assets/83167368/668bdbcd-afa2-4d80-93cc-3947bdbabf58)
+![image](https://github.com/MarcineQu/Zadanie1/assets/83167368/ac1e24a9-226a-4015-89e8-d0b3ba9ecb76)
 Polecenie do zbudowania:
 docker build -t zadanie1 . // będąc w katalogu z plikiem Dockerfile, index.js i package.json
 
